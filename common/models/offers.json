@@ -1,0 +1,51 @@
+{
+  "name": "Offers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Type": {
+      "type": "string",
+      "required": true,
+      "default": "startDate"
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "Days": {
+      "type": "date",
+      "required": true
+    },
+    "Amount": {
+      "type": "number",
+      "required": true
+    },
+    "offerCode": {
+      "type": "number",
+      "required": true
+    },
+    "Description": {
+      "type": "string",
+      "required": true
+    },
+    "offerType": {
+      "type": "string",
+      "required": true
+    },
+    "criteriaType": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
